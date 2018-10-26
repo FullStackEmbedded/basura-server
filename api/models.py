@@ -9,6 +9,7 @@ class TrashCan(models.Model):
 
 # Representation of a trash can fill state
 class TrashState(models.Model):
+      # Reference to the trash can
       trash_can = models.ForeignKey(TrashCan, on_delete=models.CASCADE)
       # Measurement acquisition time
       timestamp = models.DateTimeField()
