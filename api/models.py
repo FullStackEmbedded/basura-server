@@ -5,8 +5,7 @@ from django.db import models
 class TrashCan(models.Model):
     class Meta:
         pass
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # More fields of the trash can go here
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
 
 # Representation of a trash can fill state
 class TrashState(models.Model):
@@ -16,5 +15,3 @@ class TrashState(models.Model):
       # In centimeters from the top cover
       fill_state = models.IntegerField()
 
-  
-  
