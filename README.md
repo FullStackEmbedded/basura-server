@@ -9,7 +9,7 @@ A prototype server application for FSE 2018 - Basura Trash System
 ## Usage
 ### Instance initialization
       (venv) % cd basura-server
-      (venv) % ./manage.py migrate
-      (venv) % ./manage.py createsuperuser
+      (venv) % python ./manage.py migrate
+      (venv) % python ./manage.py createsuperuser
 ### Running the server
-      (venv) % ./manage.py runserver
+      (venv) % python ./manage.py runserver
