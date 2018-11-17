@@ -13,3 +13,7 @@ A prototype server application for FSE 2018 - Basura Trash System
       (venv) % ./manage.py createsuperuser
 ### Running the server
       (venv) % ./manage.py runserver
+      (venv) % python ./manage.py migrate
+      (venv) % python ./manage.py createsuperuser
+### Running the server
+      (venv) % python ./manage.py runserver
