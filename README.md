@@ -19,4 +19,5 @@ This starts the development server for experimentation on `localhost`.
 However, it won't allow any connections from external machines.
 If you want to access the development server from another machine, first add the host name you want to use (e.g. `basura-server`) to the `ALLOWED_HOSTS` list in `settings.py`.
 Then instruct the development server to listen on the appropriate interfaces for connections, e.g.:
-    (venv) % python manage.py runserver 0.0.0.0:8000
+      (venv) % python manage.py runserver 0.0.0.0:8000
+
