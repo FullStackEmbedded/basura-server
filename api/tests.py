@@ -37,7 +37,7 @@ class TrashStatesTests(TestCase):
         new_trash_state = {
             "trash_can": "http://testserver/trashcans/{}/".format(t.id),
             "timestamp": "2018-10-26T18:22:00Z",
-            "fill_state": 1
+            "fill_state": 18.12345
         }
         post_response = self.client.post("/trashstates/", json.dumps(new_trash_state), content_type=JSON)
         self.assertEqual(post_response.status_code, 201)
@@ -53,7 +53,7 @@ class TrashStatesTests(TestCase):
         new_trash_state = {
             "trash_can": "http://testserver/trashcans/f59e4893-5f07-4748-8318-0619d35ddd39/",
             "timestamp": "2018-10-26T18:22:00Z",
-            "fill_state": 1
+            "fill_state": 18.12345
         }
         self.assertEqual(self.client.post("/trashstates/", json.dumps(new_trash_state), content_type=JSON).status_code,
                          400)

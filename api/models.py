@@ -13,6 +13,6 @@ class TrashState(models.Model):
       trash_can = models.ForeignKey(TrashCan, on_delete=models.CASCADE)
       # Measurement acquisition time
       timestamp = models.DateTimeField()
-      # In centimeters from the top cover
-      fill_state = models.IntegerField()
+      # In percents
+      fill_state = models.FloatField()
 
