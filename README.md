@@ -17,8 +17,10 @@ A prototype server application for FSE 2018 - Basura Trash System
 ### Running the server
 The following command activates the development server.
 It is not meant for use in production; instead, the Django app should be deployed in a full-fledged web server.
-      (venv) % python manage.py runserver
-This starts the development server for experimentation on `localhost`.
+
+This starts the development server for experimentation on `localhost`:
+
+    (venv) % python manage.py runserver
 However, it won't allow any connections from external machines.
 If you want to access the development server from another machine, first add the host name you want to use (e.g. `basura-server`) to the `ALLOWED_HOSTS` list in `settings.py`.
 Then instruct the development server to listen on the appropriate interfaces for connections, e.g.:
